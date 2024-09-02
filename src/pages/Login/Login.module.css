@@ -1,0 +1,64 @@
+/* Login.module.css */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainBgColor);
+  padding: var(--paddingLarge);
+}
+
+.card {
+  background-color: var(--secondaryBgColor);
+  border-radius: 8px;
+  padding: var(--paddingXlarge);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.title {
+  font-size: var(--fontHeading);
+  color: var(--headingColor);
+  /* margin-bottom: var(--paddingMedium); */
+}
+.body {
+  color: gray;
+}
+
+.googleButton, .anonymousButton {
+  display: inline-block;
+  padding: var(--paddingMedium) var(--paddingLarge);
+  font-size: var(--fontBody);
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border: none;
+  color: var(--buttonTextColor);
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Google Sign-In Button */
+.googleButton {
+  background-color: #4285F4; /* Google blue */
+}
+
+.googleButton:hover {
+  background-color: #357ae8;
+}
+
+/* Anonymous Sign-In Button */
+.anonymousButton {
+  background-color: var(--buttonBgColor); /* Matches the global button theme color */
+}
+
+.anonymousButton:hover {
+  background-color: #e07c01; /* Slightly darker shade of the button color */
+}

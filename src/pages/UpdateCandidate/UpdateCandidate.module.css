@@ -1,0 +1,78 @@
+/* Global Resets and Utilities */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+.loginWarning {
+  font-size: var(--fontSubHeading);
+  text-align: center;
+}
+.formContainer {
+  padding: var(--paddingMedium);
+  background-color: var(--secondaryBgColor);
+  border-radius: 8px;
+  width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  margin-bottom: var(--paddingLarge);
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  color: var(--headingColor);
+  margin-bottom: var(--paddingSmall);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: var(--paddingSmall);
+  background-color: var(--inputBgColor);
+  border: 1px solid var(--inputBorderColor);
+  border-radius: 4px;
+  font-size: var(--fontBody);
+  color: var(--textColor);
+  transition: border-color 0.3s ease;
+}
+
+.input:focus,
+.select:focus {
+  border-color: var(--inputFocusBorderColor);
+  outline: none;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  color: var(--headingColor);
+}
+
+.checkbox {
+  margin-right: var(--paddingSmall);
+}
+
+.error {
+  font-size: var(--fontSmall);
+  color: var(--primaryColor);
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    padding: var(--paddingSmall);
+    width: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .formContainer {
+    padding: var(--paddingSmall);
+    width: inherit;
+  }
+}

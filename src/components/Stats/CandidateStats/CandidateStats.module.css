@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.chartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.pieChart {
+  fill : var(--primaryColor)
+}
+.subHeading {
+  color: var(--textColor);
+}
+.numberStats {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 575px) {
+  .chartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .numberStats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+}

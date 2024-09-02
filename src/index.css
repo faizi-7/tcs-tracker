@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 50px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Color Themes */
+:root {
+  --mainBgColor: #ffffff;
+  --secondaryBgColor: #f1f1f1;
+  
+  --primaryColor: #FC4100;
+  --secondaryColor: #FFC55A;
+
+  --headingColor: #007dbc;
+  --textColor: #333333;
+
+
+  --buttonBgColor: #ff8c00;
+  --buttonTextColor: #ffffff;
+
+
+  --inputBgColor: #e6e6e6;
+  --inputBorderColor: #cccccc;
+  --inputFocusBorderColor: #007dbc;
+
+  --linkColor: #007dbc;
+}
+
+
+/* Padding Styles */
+:root {
+  --paddingSmall: 8px;
+  --paddingMedium: 16px;
+  --paddingLarge: 24px;
+  --paddingXlarge: 32px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --paddingSmall: 6px;
+    --paddingMedium: 12px;
+    --paddingLarge: 18px;
+    --paddingXlarge: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --paddingSmall: 8px;
+    --paddingMedium: 14px;
+    --paddingLarge: 20px;
+    --paddingXlarge: 28px;
+  }
+}
+
+/* Font Styles */
+h1 {
+  font-size: var(--fontHeading);
+}
+
+h2 {
+  font-size: var(--fontSubHeading);
+  color: var(--textColor);
+}
+
+p {
+  font-size: var(--fontBody);
+}
+
+small {
+  font-size: var(--fontSmall);
+}
+:root {
+  --fontHeading: 24px; 
+  --fontSubHeading: 20px;
+  --fontBody: 16px;
+  --fontSmall: 14px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --fontHeading: 20px;
+    --fontSubHeading: 18px;
+    --fontBody: 14px;
+    --fontSmall: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fontHeading: 22px;
+    --fontSubHeading: 19px;
+    --fontBody: 15px;
+    --fontSmall: 13px;
+  }
+}
+
+
+
+/* Button Styles */
+.button {
+  display: inline-block;
+  padding: var(--paddingSmall) var(--paddingMedium);
+  background-color: var(--buttonBgColor);
+  color: var(--buttonTextColor);
+  font-size: var(--fontBody);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #e07c01;
+}
+.button:disabled {
+  background-color: #a9a9a9;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.logout {
+  background-color: tomato;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+.divider {
+  height: 2px;
+  background-color: var(--secondaryBgColor);
+  margin: 20px 0;
+  width: 100%;
+}
+.card {
+  padding: 10px 20px;
+  background-color: var(--secondaryBgColor);
+  color: var(--textColor);
+  border-radius: 4px;
+}

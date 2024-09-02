@@ -1,0 +1,15 @@
+.container {
+
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 50px);
+}
+.content {
+  flex: 1;
+  padding: 0 var(--paddingXlarge);
+}
+@media (max-width: 575px) {
+  .content {
+    padding: 0 var(--paddingSmall);
+  }
+}
