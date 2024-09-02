@@ -52,7 +52,7 @@ h6 {
   --mainBgColor: #ffffff;
   --secondaryBgColor: #f1f1f1;
   
-  --primaryColor: #FC4100;
+  --primaryColor: #AF47D2;
   --secondaryColor: #FFC55A;
 
   --headingColor: #007dbc;
@@ -68,6 +68,7 @@ h6 {
   --inputFocusBorderColor: #007dbc;
 
   --linkColor: #007dbc;
+  --warning: tomato;
 }
 
 

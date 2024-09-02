@@ -33,7 +33,7 @@ const HeroSection: React.FC = () => {
         {currentUser ? (
           <>
             <h1 className={styles.title}>
-              Welcome, {currentUser.displayName || "Private Contributor"}!
+              Welcome, {currentUser.displayName+ ' 🙂'|| "Guest 👤"}!
             </h1>
             {hasProfile ? (
               <h3 className={styles.body}>

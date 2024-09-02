@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className={styles.container}>
       <a
-        href="https://github.com/faizi-7"
+        href="https://github.com/faizi-7/tcs-tracker"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.githubLink}

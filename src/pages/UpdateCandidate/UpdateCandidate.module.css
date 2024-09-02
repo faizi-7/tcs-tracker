@@ -61,7 +61,7 @@
 
 .error {
   font-size: var(--fontSmall);
-  color: var(--primaryColor);
+  color: var(--warning);
 }
 
 @media (max-width: 768px) {
