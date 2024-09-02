@@ -37,7 +37,7 @@ export const useFormLogic = (initialState: Candidate) => {
         setFormData(prevData => ({
           ...prevData,
           status: value,
-          profile: 'Digital 😎'
+          profile: prevData.profile ? prevData.profile : 'Digital 😎'
         }));
       }
     } else if (type === 'checkbox') {

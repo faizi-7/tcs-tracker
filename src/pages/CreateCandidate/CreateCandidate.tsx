@@ -19,6 +19,7 @@ const CreateCandidateForm: React.FC = () => {
     region: "",
     collegeName: "",
     lastUpdated: new Date().toISOString().split("T")[0],
+    profile: "Digital 😎"
   });
   const [candidateAdded, setCandidateAdded] = useState<boolean>(false);
   const [existingProfile, setExistingProfile] = useState<Candidate | null>(

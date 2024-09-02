@@ -19,8 +19,8 @@ TCS Tracker Website is a web application designed to help track candidate profil
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/tcs-tracker-website.git
-cd tcs-tracker-website
+git clone https://github.com/faizi-7/tcs-tracker.git
+cd tcs-tracker
 npm install
 ```
 Create .env file and add these from firebase
